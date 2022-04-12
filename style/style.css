@@ -14,10 +14,7 @@ body{
     --cor1: purple;
     --cor2: rgb(85, 26, 153);
     --cor3: #FEC5E5;
-}
-
-.bg-purple{
-    background-color: #FEC5E5;
+    --cor4: white;
 }
 
 .font-purple{
@@ -42,6 +39,9 @@ body{
 
 .bold{
     font-weight: bold;
+}
+.italic{
+    font-style: italic;
 }
 
 .center{
@@ -99,9 +99,9 @@ a{
 .flex-a a{
     display: inline-block;
     border-radius: 10px;
-    background-color: purple;
+    background-color: var(--cor1);
     border: none;
-    color: #FFFFFF;
+    color: var(--cor4);
     text-align: center;
     font-size: 28px;
     padding: 10px;
@@ -146,7 +146,6 @@ a{
  .header .container{
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
 }
 
 .logos{
@@ -154,10 +153,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.menuP{
-    padding-bottom: 50px;
 }
 
 .menu1 p{
@@ -182,7 +177,7 @@ a{
 .menuP a::after{
     content: "";
     display: block;
-    background-color: purple;
+    background-color: var(--cor1);
     height: 3px;
     width: 0;
     transition: 0.2s ease-out;
@@ -281,6 +276,18 @@ a{
 .direito{
     flex-direction: row-reverse;
 
+}
+
+.flex-banner p{
+    color: var(--cor2);
+    font-size: 20px;
+}
+
+.flex-banner h1{
+    color: var(--cor2);
+    font-size: 60px;
+    font-family: 'Stencil Std', 'fantasy';
+    font-variant: small-caps
 }
 
 /*---------------------------depo-index---------------------------------------------------------------------------------------------------------------------*/
